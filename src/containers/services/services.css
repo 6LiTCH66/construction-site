@@ -29,7 +29,6 @@
     width: 470px;
     height: 366px;
     flex: 1;
-    /*width: 100%;*/
 }
 
 .services-content_wrapper-image img{
@@ -68,10 +67,10 @@
 }
 .services-content_wrapper{
     display: flex;
-    justify-content: space-between;
     margin-top: 80px;
-    gap: 2rem;
+    gap: 5rem;
 }
+
 .services-content_button{
     text-decoration: none;
     color: #FFFFFF;
@@ -87,12 +86,21 @@
 }
 #repair_work-image{
     flex: 1;
+
+    display: flex;
+    justify-content: right;
 }
 
 #repair_work-image img{
     transform: rotate(2deg);
     width: 470px;
     object-fit: cover;
+}
+.services-content_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 @media screen and (max-width: 480px){
@@ -153,7 +161,10 @@
         flex-direction: column;
     }
     #repair_work{
+
         flex-direction: column;
+
+        align-items: center;
 
     }
     .services-content_wrapper-image img{
