@@ -1,14 +1,15 @@
 .header-container{
     background-color: var(--color-bg);
     padding: 3.75rem 8rem;
+    display: flex;
+    justify-content: center;
 }
 .header-content{
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    max-width: 452px;
+    flex: 1;
 
 }
 .header-content_title{
@@ -29,12 +30,13 @@
 }
 .header-wrapper{
     display: flex;
-    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
 }
 .header-image{
-    /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex: 1;
 
 }
 .header-image img{
