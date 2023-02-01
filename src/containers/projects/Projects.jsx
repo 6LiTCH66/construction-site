@@ -29,8 +29,8 @@ function Projects(props) {
             </div>
             <div className="projects-image_container">
                     {images.slice(0, 6).map((image, key) => (
-                        <div className="image-wrapper">
-                            <img src={image} alt="image"  key={key} className="projects-image"/>
+                        <div className="image-wrapper" key={key}>
+                            <img src={image} alt="image" className="projects-image"/>
                         </div>
                     ))}
             </div>
