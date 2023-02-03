@@ -69,3 +69,18 @@
 .form-input{
     flex: 1;
 }
+.form-button{
+    margin-top: 40px;
+}
+.send-button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--color-bg-light-button);
+    border: none;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+}

@@ -28,6 +28,13 @@ function ContactForm(props) {
                 <textarea id="work_description" rows="5" placeholder="Описание работы"></textarea>
                 <label htmlFor="work_description" className="textarea-label">Описание работы</label>
             </div>
+
+            <div className="form-button">
+                <button className="send-button">
+                    Отправить форму
+                </button>
+            </div>
+
         </>
     );
 }
