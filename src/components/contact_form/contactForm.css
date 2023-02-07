@@ -80,7 +80,33 @@
     color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     width: 100%;
     cursor: pointer;
+}
+.input-container{
+    width: 100%;
+}
+.error-input{
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    color: #d32f2f;
+}
+.error-helper-text input{
+    border: 2px solid #d32f2f !important;
+}
+.error-helper-text label{
+    color: #d32f2f !important;
+}
+.required:after{
+    content: " *";
+    color: #d32f2f;
+}
+
+@media screen and (max-width: 480px){
+    .contact-form_row{
+        flex-direction: column;
+    }
 }
