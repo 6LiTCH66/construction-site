@@ -4,13 +4,7 @@
     justify-content: center;
     padding: 3.75rem 8rem 2rem 3.75rem;
     background-color: #212121;
-
 }
-/*.footer-background{*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*    object-fit: fill;*/
-/*}*/
 
 .footer-wrapper{
     display: flex;
@@ -41,7 +35,7 @@
 }
 .quick-links-title, .contact-title{
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     color: #FFFFFF;
@@ -65,4 +59,29 @@
     line-height: 20px;
     color: #FFFFFF;
     padding-bottom: 1rem;
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width: 480px){
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-container{
+        padding: 1rem;
+    }
+    .company-quick-links, .company-contact{
+        margin-top: 2.5rem;
+    }
+    .footer-links{
+        margin-left: 2rem;
+    }
+    .footer-links li:before{
+        content: "\2022";
+        margin-left: -1em;
+        width: 1em;
+        display: inline-block;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
 }

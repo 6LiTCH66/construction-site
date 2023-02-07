@@ -1,10 +1,13 @@
 import React from 'react';
 import "./footer.css";
 import footer_bg from "../../assets/footer bg.svg"
+import { FaFacebookSquare } from 'react-icons/fa';
+import {HiOutlineLocationMarker} from 'react-icons/hi';
+import {BsTelephone} from "react-icons/bs"
+import {FiMail} from 'react-icons/fi'
 function Footer(props) {
     return (
         <div className="footer-container">
-            {/*<img src={footer_bg} alt="" className="footer-background"/>*/}
             <div className="footer-wrapper">
                 <div className="company-vision">
                     <span className="company-name">
@@ -23,7 +26,13 @@ function Footer(props) {
                             <a href="#">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Услуги</a>
+                            <a href="#">Строительство</a>
+                        </li>
+                        <li>
+                            <a href="#">Ремонт</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультации</a>
                         </li>
                         <li>
                             <a href="#">Связвться с нами</a>
@@ -36,17 +45,19 @@ function Footer(props) {
                     </span>
                     <ul className="contact-links">
                         <li>
-                            mail@gmail.com
+                            <FiMail/> mail@gmail.com
                         </li>
                         <li>
-                            +372 555 555 55
+                            <BsTelephone/> +372 555 555 55
                         </li>
                         <li>
-                            Таллинн
+                            <HiOutlineLocationMarker/> Таллинн
                         </li>
                     </ul>
                     <div className="footer-social-links">
-
+                        <a href="#facebook">
+                            <FaFacebookSquare color="white" size={30}/>
+                        </a>
                     </div>
                 </div>
             </div>
