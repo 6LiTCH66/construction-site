@@ -2,4 +2,4 @@ export { default as Navbar } from './navbar/Navbar'
 export { default as Footer } from "./footer/Footer"
 export { default as ContactForm} from "./contact_form/ContactForm"
 export { default as Home} from "./Home/Home"
-export { default as Construction } from "./construction/Construction"
+export { default as ServicesTemplate } from "./construction/ServicesTemplate"

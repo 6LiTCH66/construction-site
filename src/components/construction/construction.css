@@ -1,6 +1,5 @@
 .construction-header{
-    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-    url("../../assets/hero-a-bg.2102101644476.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../../assets/hero-a-bg.2102101644476.jpg") no-repeat;
     padding: 3.75rem 8rem;
     background-size: cover;
     background-position: 50% 50%;

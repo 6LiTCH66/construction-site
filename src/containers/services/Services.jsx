@@ -3,15 +3,19 @@ import "./services.css"
 import construction_work from "../../assets/construction.jpg"
 import repair_work from "../../assets/repair.jpg"
 import consultation from "../../assets/consultation.jpg"
+import { Link } from "react-router-dom"
+import ru from "../../languages/ru.json"
 function Services(props) {
     return (
         <div className="services-container">
             <div className="services-content_header">
                 <span className="services-content_title">
-                    Наши услуги
+                    {/*Наши услуги*/}
+                    {ru.our_services.title}
                 </span>
                 <span className="services-content_description">
-                    Наша компания предлагает широкий спектр строительных услуг для клиентов, желающих провести строительные или ремонтные работы.
+                    {/*Наша компания предлагает широкий спектр строительных услуг для клиентов, желающих провести строительные или ремонтные работы.*/}
+                    {ru.our_services.description}
                 </span>
 
             </div>
@@ -23,12 +27,17 @@ function Services(props) {
                     </div>
                     <div className="services-content_wrapper-content">
                         <span className="services-content_wrapper_title">
-                            Строительство
+                            {/*Строительство*/}
+                            {ru.our_services.construction.title}
                         </span>
                         <span className="services-content_wrapper_description">
-                            Мы предоставляем услуги по строительству терасс, навесов, перголы, пристроек, дровников - сараев и устройство тёплых грядок.
+                            {/*Мы предоставляем услуги по строительству терасс, навесов, перголы, пристроек, дровников - сараев и устройство тёплых грядок.*/}
+                            {ru.our_services.construction.description}
                         </span>
-                        <a href="#" className="services-content_button">Узнать больше</a>
+                        <Link to="/terrace-construction" className="services-content_button">
+                            {/*Узнать больше*/}
+                            {ru.our_services.button_text}
+                        </Link>
                     </div>
                 </div>
 
@@ -40,11 +49,17 @@ function Services(props) {
                     </div>
                     <div className="services-content_wrapper-content">
                         <span className="services-content_wrapper_title">
-                            Ремонт
+                            {/*Ремонт*/}
+                            {ru.our_services.repair.title}
                         </span>
                         <span className="services-content_wrapper_description">
-                            Наша компания предлагает профессиональные услуги по ремонту и реставрации полов, деревянных фасадов и террас.                        </span>
-                        <a href="#" className="services-content_button">Узнать больше</a>
+                            {/*Наша компания предлагает профессиональные услуги по ремонту и реставрации полов, деревянных фасадов и террас.*/}
+                            {ru.our_services.repair.description}
+                        </span>
+                        <Link to="#" className="services-content_button">
+                            {/*Узнать больше*/}
+                            {ru.our_services.button_text}
+                        </Link>
                     </div>
                 </div>
 
@@ -55,11 +70,17 @@ function Services(props) {
                     </div>
                     <div className="services-content_wrapper-content">
                         <span className="services-content_wrapper_title">
-                            Консультация
+                            {/*Консультация*/}
+                            {ru.our_services.consultation.title}
                         </span>
                         <span className="services-content_wrapper_description">
-                            С удовольствием предоставляем Вам бесплатную консультацию. Наши специалисты готовы помочь Вам с решением любой проблемы. Задавайте вопросы и получайте качественные ответы.                        </span>
-                        <a href="#" className="services-content_button">Узнать больше</a>
+                            {/*С удовольствием предоставляем Вам бесплатную консультацию. Наши специалисты готовы помочь Вам с решением любой проблемы. Задавайте вопросы и получайте качественные ответы.*/}
+                            {ru.our_services.consultation.description}
+                        </span>
+                        <Link to="#" className="services-content_button">
+                            {/*Узнать больше*/}
+                            {ru.our_services.button_text}
+                        </Link>
                     </div>
                 </div>
 

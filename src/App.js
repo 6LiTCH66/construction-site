@@ -1,23 +1,32 @@
 import './App.css';
-import {Navbar, Footer, Home, Construction} from "./components";
-import {Header, Services, Projects, Contact} from "./containers";
+import {Navbar, Footer, Home, ServicesTemplate} from "./components";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ru from "./languages/ru.json"
+import {useEffect} from "react";
 function App() {
+
   return (
       <BrowserRouter>
           <div className="App">
+
               <Navbar/>
               <Routes>
                   <Route path="/" element={<Home/>}/>
+                  {ru.services.map((services) => (
+                      services.type_of_work_links.map((service, index) => (
+                          <Route key={index} path={service.link_url} element={
+                              <ServicesTemplate
+                                  service_title={services.service_title}
+                                  service_description={services.service_description}
+                                  type_of_work_title={services.type_of_work_title}
+                                  type_of_work_content={services.type_of_work_links}
+                                  title={service.link_title}
+                                  service_content={service.content}
+                              />
+                          }/>
+                      ))
+                  ))}
 
-                  <Route path="/terrace-construction" element={<Construction title="Строительство террас" description="Заказав строительство террасы у нас, вы можете быть уверены в качестве и профессионализме наших сотрудников. Мы сами выполняем работу от начала до конца, включая заложение фундамента, строительство и отделочные работы. Мы заботимся о качестве и профессионализме нашей работы, чтобы вам было достаточно легко и приятно наслаждаться результатом!"/>}/>
-                  <Route path="/canopy-construction" element={<Construction title="Строительство навесов" description="Получите идеальный навес для своего дома с помощью нашей компании. Мы занимаемся всеми этапами строительства, от заложения фундамента до отделочных работ. Наши специалисты предложат вам лучшие решения и выполнят работу с высочайшим качеством."/>}/>
-                  <Route path="/pergola-construction" element={<Construction title="Строительство перголы" description="Сделайте свой дом еще более комфортным с помощью нашей команды, специализирующейся на строительстве пергол. Мы выполняем все этапы работы от заложения фундамента до отделочных работ."/>}/>
-
-                  <Route path="/extensions-construction" element={<Construction title="Строительство пристроек" description="Заказывая строительство пристроек у нашей фирмы, вы получаете гарантию качества и профессионализма. Мы используем только высококачественные материалы и имеем опыт работы над подобными проектами."/>}/>
-                  <Route path="/woodsheds-construction" element={<Construction title="Строительство дровников и сараев" description="Строительство дровников и сараев является важным аспектом домашней инфраструктуры и предлагает множество преимуществ. Наша компания предлагает качественные и надежные услуги по строительству дровников и сараев."/>}/>
-
-                  <Route path="/warp-bed-construction" element={<Construction title="Устройство тёплых грядок" description="Устройство теплых грядок – это важный элемент вашего сада или участка, который поможет вам удобно и эффективно выращивать растения в холодные месяцы. Чтобы получить максимальный результат, важно выбрать качественное и надежное устройство. Именно поэтому следует заказывать Устройство теплых грядок именно у нашей компании."/>}/>
               </Routes>
               <Footer/>
           </div>

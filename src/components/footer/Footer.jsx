@@ -5,6 +5,7 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {BsTelephone} from "react-icons/bs"
 import {FiMail} from 'react-icons/fi'
+import {Link} from "react-router-dom"
 function Footer(props) {
     return (
         <div className="footer-container">
@@ -23,19 +24,19 @@ function Footer(props) {
                     </span>
                     <ul className="footer-links">
                         <li>
-                            <a href="#">Главная</a>
+                            <Link to="/">Главная</Link>
                         </li>
                         <li>
-                            <a href="#">Строительство</a>
+                            <Link to="/terrace-construction">Строительство</Link>
                         </li>
                         <li>
-                            <a href="#">Ремонт</a>
+                            <Link to="/">Ремонт</Link>
                         </li>
                         <li>
-                            <a href="#">Консультации</a>
+                            <Link to="/">Консультации</Link>
                         </li>
                         <li>
-                            <a href="#">Связвться с нами</a>
+                            <Link to="/">Связвться с нами</Link>
                         </li>
                     </ul>
                 </div>
