@@ -1,6 +1,7 @@
 import React from 'react';
 import "./construction.css"
 import {ContactForm} from "../index";
+import {Link} from "react-router-dom"
 
 function Construction(props) {
     return (
@@ -28,33 +29,33 @@ function Construction(props) {
                         </p>
                         <ul className="work-types">
                             <li>
-                                <a href="">Строительство терасс</a>
+                                <Link to="/terrace-construction">Строительство терасс</Link>
                             </li>
 
                             <li>
-                                <a href="">Строительство навесов</a>
+                                <Link to="/canopy-construction">Строительство навесов</Link>
                             </li>
 
                             <li>
-                                <a href="">Строительство перголы</a>
+                                <Link to="/pergola-construction">Строительство перголы</Link>
                             </li>
 
                             <li>
-                                <a href="">Строительство пристроек</a>
+                                <Link to="/extensions-construction">Строительство пристроек</Link>
                             </li>
 
                             <li>
-                                <a href="">Строительство дровников и сараев</a>
+                                <Link to="/woodsheds-construction">Строительство дровников и сараев</Link>
                             </li>
 
                             <li>
-                                <a href="">Устройство тёплых грядок</a>
+                                <Link to="/warp-bed-construction">Устройство тёплых грядок</Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="work-info_container">
-                        <p className="work-info_title">Строительство террас</p>
+                        <p className="work-info_title">{props.title}</p>
 
                         <p className="work-info_text">
                             Стоимость работ составляет:
@@ -65,7 +66,7 @@ function Construction(props) {
                             </li>
                         </ul>
                         <p className="work-info_text" id="work-description">
-                            Строительство террасы стоит заказать именно у нас, так как мы сами выполняем работу от начала до конца. Наши специалисты заложат фундамент, а также выполнят строительные и отделочные работы.
+                            {props.description}
                         </p>
                         <ContactForm/>
                     </div>
