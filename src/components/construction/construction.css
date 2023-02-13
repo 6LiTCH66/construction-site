@@ -29,9 +29,9 @@
 .construction-header_description{
     margin-top: 1rem;
     line-height: 1.5rem;
-}
-.construction-header_description{
     color: #FFFFFF;
+    height: 100%;
+    min-height: 75px;
 }
 .construction-header_wrapper hr{
     border: 1px solid #FFFFFF;

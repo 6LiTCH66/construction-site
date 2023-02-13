@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {IoIosArrowDown} from "react-icons/io";
+import {Link} from "react-router-dom"
 
 
 const Ul = styled.ul`
@@ -39,18 +40,18 @@ function RightNavbar(props) {
                 <a href="/">Главная</a>
             </li>
             <li className="dropdown nav__listitem">
-                <a href="#services">Услуги
+                <Link to="#services">Услуги
                     <IoIosArrowDown size={13}/>
-                </a>
+                </Link>
                 <ul className="nav__listitemdrop">
                     <li>
-                        <a href="terrace-construction">Строительство</a>
+                        <Link to="terrace-construction">Строительство</Link>
                     </li>
                     <li>
-                        <a href="#repair">Ремонт</a>
+                        <Link to="floor-resurfacing">Ремонт</Link>
                     </li>
                     <li>
-                        <a href="#consultations">Консультации</a>
+                        <Link to="#consultations">Консультации</Link>
                     </li>
                 </ul>
 

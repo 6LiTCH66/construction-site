@@ -30,7 +30,7 @@ function Footer(props) {
                             <Link to="/terrace-construction">Строительство</Link>
                         </li>
                         <li>
-                            <Link to="/">Ремонт</Link>
+                            <Link to="/floor-resurfacing">Ремонт</Link>
                         </li>
                         <li>
                             <Link to="/">Консультации</Link>

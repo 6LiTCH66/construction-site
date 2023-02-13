@@ -23,6 +23,7 @@ function ServicesTemplate(props) {
                     <hr/>
                     <p className="construction-header_description">
                         {props.service_description}
+
                     </p>
                 </div>
 
@@ -34,6 +35,7 @@ function ServicesTemplate(props) {
                         <p className="work-types_title">
 
                             {props.type_of_work_title}
+
                         </p>
                         <ul className="work-types">
                             {props.type_of_work_content.map((link, id) =>(
