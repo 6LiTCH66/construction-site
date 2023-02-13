@@ -51,7 +51,7 @@ function RightNavbar(props) {
                         <Link to="floor-resurfacing">Ремонт</Link>
                     </li>
                     <li>
-                        <Link to="#consultations">Консультации</Link>
+                        <Link to="consultation">Консультации</Link>
                     </li>
                 </ul>
 

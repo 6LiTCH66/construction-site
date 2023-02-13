@@ -33,7 +33,7 @@ function Footer(props) {
                             <Link to="/floor-resurfacing">Ремонт</Link>
                         </li>
                         <li>
-                            <Link to="/">Консультации</Link>
+                            <Link to="/consultation">Консультации</Link>
                         </li>
                         <li>
                             <Link to="/">Связвться с нами</Link>

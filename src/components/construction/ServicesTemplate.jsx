@@ -62,6 +62,11 @@ function ServicesTemplate(props) {
                         <p className="work-info_text" id="work-description">
                             {props.service_content.content_description}
                         </p>
+                        <p className="contact-info">
+                            <i>
+                                Cвяжитесь с нами через форму или по номеру +327 555 555 55
+                            </i>
+                        </p>
                         <ContactForm/>
                     </div>
                 </div>

@@ -56,7 +56,7 @@ function Services(props) {
                             {/*Наша компания предлагает профессиональные услуги по ремонту и реставрации полов, деревянных фасадов и террас.*/}
                             {ru.our_services.repair.description}
                         </span>
-                        <Link to="#" className="services-content_button">
+                        <Link to="floor-resurfacing" className="services-content_button">
                             {/*Узнать больше*/}
                             {ru.our_services.button_text}
                         </Link>
@@ -77,7 +77,7 @@ function Services(props) {
                             {/*С удовольствием предоставляем Вам бесплатную консультацию. Наши специалисты готовы помочь Вам с решением любой проблемы. Задавайте вопросы и получайте качественные ответы.*/}
                             {ru.our_services.consultation.description}
                         </span>
-                        <Link to="#" className="services-content_button">
+                        <Link to="consultation" className="services-content_button">
                             {/*Узнать больше*/}
                             {ru.our_services.button_text}
                         </Link>
