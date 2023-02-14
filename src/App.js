@@ -1,6 +1,7 @@
 import './App.css';
 import React from "react";
 import {Navbar, Footer, Home, ServicesTemplate} from "./components";
+import {Offer} from "./containers";
 import {Routes, Route} from "react-router-dom";
 import ru from "./languages/ru.json"
 function App() {
@@ -12,6 +13,7 @@ function App() {
               <Navbar/>
               <Routes>
                   <Route path="/" element={<Home/>}/>
+
                   {ru.services.map((services) => (
                       services.type_of_work_links.map((service, index) => (
                           <Route key={index} path={service.link_url} element={
@@ -26,7 +28,7 @@ function App() {
                           }/>
                       ))
                   ))}
-
+                    <Route path="/offer" element={<Offer/>}/>
               </Routes>
               <Footer/>
           </div>
