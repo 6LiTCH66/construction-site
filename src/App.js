@@ -1,12 +1,12 @@
 import './App.css';
+import React from "react";
 import {Navbar, Footer, Home, ServicesTemplate} from "./components";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import ru from "./languages/ru.json"
-import {useEffect} from "react";
 function App() {
 
   return (
-      <BrowserRouter>
+
           <div className="App">
 
               <Navbar/>
@@ -30,7 +30,6 @@ function App() {
               </Routes>
               <Footer/>
           </div>
-      </BrowserRouter>
 
   );
 }

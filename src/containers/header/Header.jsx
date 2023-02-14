@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import "./header.css"
 import header_image from "../../assets/header-vector.svg"
 import ru from "../../languages/ru.json"
+import {Link} from "react-router-dom";
+
 function Header(props) {
-    // useEffect(() => {
-    //     console.log(header_image)
-    // }, []);
 
     return (
         <div className="header-container">
@@ -18,7 +17,7 @@ function Header(props) {
                         <span className="header-content_company">Semarim</span>{ru.header.header_description}
                     </span>
 
-                    <a href="#offer" className="header-content_button">Нанять нас</a>
+                    <Link to="#offer" className="header-content_button">Нанять нас</Link>
 
                 </div>
                 <div className="header-image">

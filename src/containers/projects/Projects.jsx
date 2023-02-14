@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./projects.css"
+import {Link} from "react-router-dom";
 
 const fetchAllImages = () => {
     const imagePaths = require.context("../../assets/our_work_images", true)
@@ -34,7 +35,7 @@ function Projects(props) {
                         </div>
                     ))}
             </div>
-            <a href="#" className="projects-button">Показать больше</a>
+            <Link to="#" className="projects-button">Показать больше</Link>
 
         </div>
     );

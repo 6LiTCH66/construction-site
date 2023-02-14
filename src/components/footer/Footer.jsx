@@ -56,9 +56,9 @@ function Footer(props) {
                         </li>
                     </ul>
                     <div className="footer-social-links">
-                        <a href="#facebook">
+                        <Link href="#facebook">
                             <FaFacebookSquare color="white" size={30}/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

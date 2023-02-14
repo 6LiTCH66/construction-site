@@ -37,7 +37,7 @@ function RightNavbar(props) {
     return (
         <Ul open={props.open}>
             <li className="nav__listitem">
-                <a href="/">Главная</a>
+                <Link to="/">Главная</Link>
             </li>
             <li className="dropdown nav__listitem">
                 <Link to="#services">Услуги
@@ -57,17 +57,17 @@ function RightNavbar(props) {
 
             </li>
             <li className="nav__listitem">
-                <a href="#gallery">Галерея</a>
+                <Link to="#gallery">Галерея</Link>
             </li >
             <li className="nav__listitem">
-                <a href="#price">Цены</a>
+                <Link to="#price">Цены</Link>
             </li>
             <li className="nav__listitem">
-                <a href="#contact">Контакты</a>
+                <Link to="#contact">Контакты</Link>
             </li>
 
             <div className="link-button">
-                <a href="#offer">Предложение</a>
+                <Link to="#offer">Предложение</Link>
             </div>
 
         </Ul>
