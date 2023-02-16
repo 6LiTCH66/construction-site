@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import {Navbar, Footer, Home, ServicesTemplate} from "./components";
-import {Offer} from "./containers";
+import {ContactUs, Offer} from "./containers";
 import {Routes, Route} from "react-router-dom";
 import ru from "./languages/ru.json"
 function App() {
@@ -29,6 +29,7 @@ function App() {
                       ))
                   ))}
                     <Route path="/offer" element={<Offer/>}/>
+                    <Route path="/contact" element={<ContactUs/>}/>
               </Routes>
               <Footer/>
           </div>

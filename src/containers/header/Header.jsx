@@ -17,7 +17,7 @@ function Header(props) {
                         <span className="header-content_company">Semarim</span>{ru.header.header_description}
                     </span>
 
-                    <Link to="#offer" className="header-content_button">Нанять нас</Link>
+                    <Link to="/offer" className="header-content_button">Нанять нас</Link>
 
                 </div>
                 <div className="header-image">
